@@ -1,0 +1,141 @@
+.contact {
+  background-color: var(--white-color);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.contact-form-wrapper {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid rgba(37, 35, 37, 0.1);
+  border-radius: 4px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form .btn-primary {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.contact-form .btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-message {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.contact-info-box {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 40px;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.contact-info-box h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.contact-info-box .decorative-line {
+  width: 60px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  margin-bottom: 2rem;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item h4 {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  color: rgba(245, 245, 245, 0.9);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form-wrapper,
+  .contact-info-box {
+    padding: 30px 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+}

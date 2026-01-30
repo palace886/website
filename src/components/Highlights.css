@@ -1,0 +1,78 @@
+.highlights {
+  background-color: #fafafa;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.highlight-card {
+  background-color: var(--white-color);
+  padding: 40px 30px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-icon svg {
+  width: 60px;
+  height: 60px;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  padding: 15px;
+  background-color: rgba(193, 166, 109, 0.1);
+  border-radius: 50%;
+}
+
+.highlight-card:hover .highlight-icon svg {
+  transform: scale(1.1);
+  background-color: rgba(193, 166, 109, 0.15);
+  color: rgb(173, 146, 89);
+}
+
+.highlight-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  color: rgba(37, 35, 37, 0.7);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .highlight-card {
+    padding: 30px 25px;
+  }
+}
