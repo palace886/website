@@ -1,18 +1,20 @@
-import { useState, FormEvent } from 'react';
-import './Contact.css';
+import { useState, type FormEvent } from "react";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: '',
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -24,21 +26,21 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Simple mailto implementation for formality
-    const subject = encodeURIComponent('Enquiry from The Palace Website');
+    const subject = encodeURIComponent("Enquiry from The Palace Website");
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
     );
 
     window.location.href = `mailto:info@the-palace.in?subject=${subject}&body=${body}`;
 
-    setSubmitMessage('Thank you for your enquiry. We will contact you soon.');
+    setSubmitMessage("Thank you for your enquiry. We will contact you soon.");
     setIsSubmitting(false);
 
     // Reset form
-    setFormData({ name: '', phone: '', email: '', message: '' });
+    setFormData({ name: "", phone: "", email: "", message: "" });
 
     setTimeout(() => {
-      setSubmitMessage('');
+      setSubmitMessage("");
     }, 5000);
   };
 
@@ -101,10 +103,16 @@ const Contact = () => {
                   placeholder="Your message or requirements"
                 ></textarea>
               </div>
-              <button type="submit" className="btn-primary" disabled={isSubmitting}>
-                {isSubmitting ? 'Submitting...' : 'Submit Enquiry'}
+              <button
+                type="submit"
+                className="btn-primary"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Submitting..." : "Submit Enquiry"}
               </button>
-              {submitMessage && <p className="submit-message">{submitMessage}</p>}
+              {submitMessage && (
+                <p className="submit-message">{submitMessage}</p>
+              )}
             </form>
           </div>
           <div className="contact-info-box">
@@ -113,9 +121,12 @@ const Contact = () => {
             <div className="info-item">
               <h4>Address</h4>
               <p>
-                THE PALACE<br />
-                Next to Pioneer Medical College,<br />
-                Sayajipura, Ajwa-Nimeta Road,<br />
+                THE PALACE
+                <br />
+                Next to Pioneer Medical College,
+                <br />
+                Sayajipura, Ajwa-Nimeta Road,
+                <br />
                 Vadodara
               </p>
             </div>
