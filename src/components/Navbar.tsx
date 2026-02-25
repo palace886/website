@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <span className="logo-text">THE PALACE</span>
-          <span className="logo-subtitle">by Damodardas</span>
+          <span className="logo-subtitle">by DMC Group</span>
         </div>
 
         <button

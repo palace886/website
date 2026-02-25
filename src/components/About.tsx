@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-header text-center">
         <h2 className="section-title">Our Projects</h2>
         <p className="section-subtitle">
-          Two landmark developments by Damodardas Group, crafted with a legacy spanning over 75 years
+          Two landmark developments by DMC Group, crafted with a legacy spanning over 75 years
         </p>
       </div>
 

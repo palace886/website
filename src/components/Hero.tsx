@@ -24,7 +24,7 @@ const Hero = () => {
           <h1 className="hero-title">THE PALACE</h1>
           <div className="hero-divider"></div>
           <p className="hero-tagline">Your Home Defines Your Lifestyle</p>
-          <p className="hero-legacy">by Damodardas Group &mdash; Since 1961</p>
+          <p className="hero-legacy">by DMC Group &mdash; Since 1961</p>
         </div>
       </div>
 

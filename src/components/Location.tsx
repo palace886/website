@@ -1,13 +1,13 @@
-import './Location.css';
+import "./Location.css";
 
 const Location = () => {
   const landmarks = [
-    'Pioneer Medical College (Adjacent)',
-    'Sayajipura',
-    'Ajwa-Nimeta Road',
-    'Major Connectivity Points',
-    'Educational Institutions',
-    'Healthcare Facilities',
+    "Pioneer Medical College (Adjacent)",
+    "Sayajipura",
+    "Ajwa-Nimeta Road",
+    "Major Connectivity Points",
+    "Educational Institutions",
+    "Healthcare Facilities",
   ];
 
   return (
@@ -22,7 +22,7 @@ const Location = () => {
         <div className="location-content">
           <div className="location-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.0!2d73.1!3d22.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzAwLjAiTiA3M8KwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d118106.70010221665!2d73.17308625!3d22.32210265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x395fcfe7ee4a5c19%3A0xd1eb87c3e7d6fbdc!2sThe%20palace%2C%20Sayajipura%20Village%2C%20Madhavpura%2C%20Vadodara%2C%20Gujarat%20390019!3m2!1d22.3299312!2d73.26574839999999!5e0!3m2!1sen!2sin!4v1772030516491!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -36,9 +36,12 @@ const Location = () => {
             <h3>Address</h3>
             <div className="decorative-line"></div>
             <p className="address-text">
-              THE PALACE<br />
-              Next to Pioneer Medical College,<br />
-              Sayajipura, Ajwa-Nimeta Road,<br />
+              THE PALACE
+              <br />
+              Next to Pioneer Medical College,
+              <br />
+              Sayajipura, Ajwa-Nimeta Road,
+              <br />
               Vadodara
             </p>
             <h3>Nearby Landmarks</h3>
@@ -49,9 +52,15 @@ const Location = () => {
               ))}
             </ul>
             <div className="contact-info">
-              <p><strong>Phone:</strong> +91 7877874848</p>
-              <p><strong>Email:</strong> info@the-palace.in</p>
-              <p><strong>Website:</strong> www.the-palace.in</p>
+              <p>
+                <strong>Phone:</strong> +91 9157878111
+              </p>
+              <p>
+                <strong>Email:</strong> info@the-palace.in
+              </p>
+              <p>
+                <strong>Website:</strong> www.the-palace.in
+              </p>
             </div>
           </div>
         </div>
